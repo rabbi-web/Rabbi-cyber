@@ -1,0 +1,139 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সাইবার সিকিউরিটি শেখার পূর্ণাঙ্গ গাইডলাইন</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafc;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .button:hover {
+            transform: scale(1.02);
+        }
+        .content {
+            display: none;
+            background: #ecf0f1;
+            padding: 15px;
+            margin: 5px 0 15px 0;
+            border-radius: 5px;
+        }
+        .content p {
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background: #2c3e50;
+            color: #fff;
+        }
+    </style>
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            playSound();
+        }
+
+        function playSound() {
+            const audio = new Audio('https://www.soundjay.com/button/beep-07.wav');
+            audio.play();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>সাইবার সিকিউরিটি শেখার পূর্ণাঙ্গ গাইডলাইন</h1>
+        <p>একটি পূর্ণাঙ্গ সাইবার সিকিউরিটি লার্নিং রোডম্যাপ</p>
+    </header>
+
+    <div class="container">
+
+        <!-- ধাপ ১: নেটওয়ার্ক সিকিউরিটি -->
+        <h2>ধাপ ১: নেটওয়ার্ক সিকিউরিটি</h2>
+        <button class="button" style="background: #FF5733;" onclick="toggleContent('item1')">১. TCP/IP Model</button>
+        <div class="content" id="item1">
+            <p>TCP/IP হলো একটি যোগাযোগ প্রোটোকল যা ইন্টারনেট এবং অন্যান্য নেটওয়ার্কে ডেটা ট্রান্সমিশনের জন্য ব্যবহৃত হয়।</p>
+        </div>
+
+        <button class="button" style="background: #33FF57;" onclick="toggleContent('item2')">২. DNS (Domain Name System)</button>
+        <div class="content" id="item2">
+            <p>DNS ওয়েবসাইটের নামকে আইপি অ্যাড্রেসে রূপান্তর করে।</p>
+        </div>
+
+        <button class="button" style="background: #5733FF;" onclick="toggleContent('item3')">৩. VPN (Virtual Private Network)</button>
+        <div class="content" id="item3">
+            <p>VPN ব্যবহার করে একটি সুরক্ষিত এবং এনক্রিপ্টেড নেটওয়ার্ক কানেকশন স্থাপন করা হয়।</p>
+        </div>
+
+        <!-- ধাপ ২: অপারেটিং সিস্টেম সিকিউরিটি -->
+        <h2>ধাপ ২: অপারেটিং সিস্টেম সিকিউরিটি</h2>
+        <button class="button" style="background: #FFC300;" onclick="toggleContent('item4')">৪. Linux Command Line</button>
+        <div class="content" id="item4">
+            <p>Linux কমান্ড লাইন সিস্টেম অ্যাডমিনিস্ট্রেশনের জন্য ব্যবহার করা হয়।</p>
+        </div>
+
+        <button class="button" style="background: #DAF7A6;" onclick="toggleContent('item5')">৫. Windows Security</button>
+        <div class="content" id="item5">
+            <p>Windows সিকিউরিটি হল উইন্ডোজ সিস্টেমের সুরক্ষা ব্যবস্থা।</p>
+        </div>
+
+        <!-- ধাপ ৩: ওয়েব সিকিউরিটি -->
+        <h2>ধাপ ৩: ওয়েব সিকিউরিটি</h2>
+        <button class="button" style="background: #C70039;" onclick="toggleContent('item6')">৬. SQL Injection</button>
+        <div class="content" id="item6">
+            <p>SQL ইনজেকশন হল একটি সাধারণ ওয়েব অ্যাপ্লিকেশন দুর্বলতা।</p>
+        </div>
+
+        <button class="button" style="background: #900C3F;" onclick="toggleContent('item7')">৭. XSS (Cross-Site Scripting)</button>
+        <div class="content" id="item7">
+            <p>XSS আক্রমণ ওয়েব পেজে ক্ষতিকারক স্ক্রিপ্ট ইনজেক্ট করে।</p>
+        </div>
+
+        <!-- আরও ৭০+ ধাপ -->
+        <h2>আরও ৭০+ ধাপ...</h2>
+        <button class="button" style="background: #581845;" onclick="toggleContent('item8')">৮. Firewall</button>
+        <div class="content" id="item8">
+            <p>ফায়ারওয়াল হলো একটি নিরাপত্তা ব্যবস্থা যা অপ্রয়োজনীয় ট্রাফিক ব্লক করে।</p>
+        </div>
+
+        <!-- এখানে ৭০+ আইটেম যুক্ত করুন -->
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 সাইবার সিকিউরিটি গাইড | তৈরি করেছেন ফয়জুর রাব্বি</p>
+    </footer>
+</body>
+</html>
